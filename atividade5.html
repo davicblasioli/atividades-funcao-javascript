@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Atividade 5</h1>
+    <script>
+
+        let numero1 = parseFloat(prompt('Primeiro número')) 
+        let opera = prompt('Qual operação')
+        let numero2 = parseFloat(prompt('Segundo número'))
+
+        function operacaoNumeros(num1, num2) {
+            if(opera == '+'){
+                var resultado = num1 + num2
+            }
+            else if(opera == '-'){
+                var resultado = num1 - num2
+            }
+            else if(opera == '*'){
+                var resultado = num1 * num2
+            }
+            else if(opera == '/'){
+                var resultado = num1 / num2
+            }
+            else{
+                var resultado = 'Insira uma operação válida' 
+            }
+            return resultado
+        }
+
+        alert(operacaoNumeros(numero1, numero2))
+
+    </script>
+
+</body>
+</html>

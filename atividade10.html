@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Atividade 10</h1>
+    <script>
+
+        function calcularDigitos(num1){
+            var string = String(num1)       
+            var resultado = string.split('')
+            var numrever = resultado.reverse()
+            var numfinal = ''
+            for(i in numrever){
+                numfinal = numfinal + numrever[i]
+            }
+            return numfinal
+        }
+        var num1 = prompt('Digite um número')
+        alert(calcularDigitos(num1))
+
+    </script>
+
+</body>
+</html>

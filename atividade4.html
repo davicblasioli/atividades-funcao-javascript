@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Atividade 4</h1>
+    <script>
+
+        let nota1 = parseFloat(prompt('Qual a primeira nota do aluno: ')) 
+        let nota2 = parseFloat(prompt('Qual a segunda nota do aluno: '))
+        let nota3 = parseFloat(prompt('Qual a terceira nota do aluno: '))
+        let ariOuPond = prompt('A ou P?')
+
+        function mediaAritimetica(num1, num2, num3) {
+            var mediaA = (num1 + num2 + num3)/3
+            return mediaA
+        }
+
+        function mediaPonderada(num1, num2, num3) {
+            var mediaP = (num1*5 + num2*3 + num3*2)/10
+            return mediaP
+        }
+        
+        if(ariOuPond.toUpperCase() == 'A'){
+            alert(mediaAritimetica(nota1, nota2, nota3))
+        }
+        else if(ariOuPond.toUpperCase() == 'P'){
+            alert(mediaPonderada(nota1, nota2, nota3))
+        }
+        else{
+            alert('Valor inválido')
+        }
+
+    </script>
+
+</body>
+</html>
